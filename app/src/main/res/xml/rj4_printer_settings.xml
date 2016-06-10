@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:summary="@string/text_bluetooth_setting"
+		android:title="@string/text_device_setting">
+
+		<EditTextPreference android:enabled="true"
+			android:key="printer_pawerofftime" android:title="@string/text_printer_pawerofftime" />
+
+		<ListPreference android:entries="@array/jpeg_halftone_array"
+			android:entryValues="@array/jpeg_halftone_array_value" android:key="print_jpeg_halftone"
+			android:title="@string/text_print_jpeg_halftone" />
+
+
+		<ListPreference android:entries="@array/rj_density_array"
+			android:entryValues="@array/rj_density_array_value" android:key="rj_print_density"
+			android:title="@string/text_print_density" />
+			
+	</PreferenceCategory>
+
+</PreferenceScreen>

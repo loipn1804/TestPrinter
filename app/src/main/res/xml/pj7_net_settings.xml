@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:summary="@string/text_wifi_setting"
+        android:title="@string/text_wifi_setting" >
+        <ListPreference
+            android:entries="@array/bootmode_array"
+            android:entryValues="@array/bootmode_array_value"
+            android:key="net_bootmode"
+            android:title="@string/text_net_bootmode" />
+        <ListPreference
+            android:entries="@array/net_interface_array"
+            android:entryValues="@array/net_interface_array_value"
+            android:key="net_interface"
+            android:title="@string/text_net_interface" />
+        <ListPreference
+            android:entries="@array/ip_address_array"
+            android:entryValues="@array/ip_address_array_value"
+            android:key="net_ip4_staticmode"
+            android:title="@string/text_net_ip4_staticmode" />
+
+        <EditTextPreference
+            android:enabled="true"
+            android:key="net_ipv4_static_address"
+            android:title="@string/text_net_ipv4_static_address" />
+        <EditTextPreference
+            android:enabled="true"
+            android:key="net_subnetmask"
+            android:title="@string/text_net_subnetmask" />
+        <EditTextPreference
+            android:enabled="true"
+            android:key="net_gateway"
+            android:title="@string/text_net_gateway" />
+
+        <ListPreference
+            android:entries="@array/dns_mode_array"
+            android:entryValues="@array/dns_mode_array_value"
+            android:key="net_dns_ipv4_bootmethod"
+            android:title="@string/text_net_dns_ipv4_bootmethod" />
+
+        <EditTextPreference
+            android:enabled="true"
+            android:key="net_primary_dns_ipv4address"
+            android:title="@string/text_net_primary_dns_ipv4address" />
+        <EditTextPreference
+            android:enabled="true"
+            android:key="net_second_dns_ipv4address"
+            android:title="@string/text_net_second_dns_ipv4address" />
+
+        <EditTextPreference
+            android:enabled="true"
+            android:key="net_nodenam"
+            android:title="@string/text_net_nodenam" />
+    </PreferenceCategory>
+      
+    <PreferenceCategory android:title="@string/text_wirelessdirect_setting" >
+        <ListPreference
+            android:entries="@array/key_create_mode_array"
+            android:entryValues="@array/key_create_mode_array_value"
+            android:key="wirelessdirect_key_create_mode"
+            android:title="@string/text_wirelessdirect_key_create_mode" />
+
+        <EditTextPreference
+            android:enabled="true"
+            android:key="wirelessdirect_ssid"
+            android:title="@string/text_wirelessdirect_ssid" />
+        <EditTextPreference
+            android:enabled="true"
+            android:key="wirelessdirect_network_key"
+            android:title="@string/text_wirelessdirect_network_key" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                            android:layout_height="0dp"
+            android:layout_weight="1"
+ >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mw_series"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/btnTransfer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:enabled="true"
+                android:onClick="MWBluetoothPreferenceButtonOnClick"
+                android:text="@string/button_bluetooth_settings" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pj_700_series"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/btnPJ7BluetoothPreference"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:enabled="true"
+                android:onClick="BluetoothPreferenceButtonOnClick"
+                android:text="@string/button_bluetooth_settings" />
+
+            <Button
+                android:id="@+id/btnPJ7NetPreference"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:enabled="true"
+                android:onClick="NetPreferenceButtonOnClick"
+                android:text="@string/button_network_settings" />
+
+
+
+            <Button
+                android:id="@+id/btnPJ7PrinterPreference"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:enabled="true"
+                android:onClick="PJ7PrinterPreferenceButtonOnClick"
+                android:text="@string/button_device_settings" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rj_4030ai"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/btnRJ4BluetoothPreference"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:enabled="true"
+                android:onClick="BluetoothPreferenceButtonOnClick"
+                android:text="@string/button_bluetooth_settings" />
+
+
+
+            <Button
+                android:id="@+id/btnRJ4PrinterPreference"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:enabled="true"
+                android:onClick="RJ4PrinterPreferenceButtonOnClick"
+                android:text="@string/button_device_settings" />
+        </LinearLayout>
+
+            </ScrollView>
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:enabled="true"
+                android:onClick="printerSettingsButtonOnClick"
+                android:text="@string/button_printer_settings" />
+        </LinearLayout>
+
+
+        </LinearLayout>
+        
+
